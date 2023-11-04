@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 2rem 14px;
+
+}
+
+.container {
+    /* background: grey; */
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container .projects {
+    margin-top: 4rem;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.container .projects .project-item {
+    border: 1px solid rgb(239, 236, 236);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 250px;
+    min-height: 240px;
+    margin-bottom: 2rem;
+}
+
+.container .projects .project-item h4 {
+    /* border: 1px solid; */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(237, 234, 234);
+    color: #717271;
+}
+
+.container .projects .project-item p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.projects .project-item p a {
+    text-decoration: none;
+    /* background: #c6c2c2; */
+    border-radius: 5px;
+    padding: 8px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* color: #000; */
+    cursor: pointer;
+    /* margin: 5px; */
+}
+.btn-source {
+    background: #4c4d4c;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.btn-demo {
+    background: #398ddb;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.btn-source:hover {
+    font-size: 18px;
+}
+.btn-demo:hover {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .container {
+    width: 95%;
+   }
+
+   .container .projects .project-item {
+    border: 1px solid rgb(239, 236, 236);
+    border-radius: 3px;
+    box-shadow: rgba(66, 66, 66, 0.1) 0px 4px 12px;
+    width: 260px;
+    min-height: 240px;
+    margin-bottom: 1rem;
+}
+
+}
+
+
+
