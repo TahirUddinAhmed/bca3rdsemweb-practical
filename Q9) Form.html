@@ -1,0 +1,131 @@
+<!-- create a html form with the all form elements-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment by Tahir Ahmed </title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+    }
+
+    .title {
+      font-size: 38px;
+
+    }
+
+    .el {
+      color: blue;
+    }
+
+    .registration {
+      background: #efefef;
+      text-align: left;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-bottom: 2em;
+      min-width: 300px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .registration .form-group label {
+      font-size: 21px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 18px;
+      border: none;
+      box-shadow: 2px 0 2px #E4E6E7;
+
+    }
+    .regBtn {
+      width: 100%;
+      padding: 8px 0;
+      margin-top: 10px;
+      background: blue;
+      border: none;
+      color: #fff;
+      font-size: 21px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .payment {
+      display: flex;
+      justify-content: space-around;
+      font-size: 18px;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title">Student <span class="el">Registrations</span></h2>
+
+    <div class="registration">
+      <form action="" method="post" name="reg">
+        <div class="form-group">
+          <label for="username">Full name</label>
+          <input id="username" type="text" class="input" placeholder="Enter your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" type="phone" class="input" placeholder="Enter your mobile number" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Full name</label>
+          <input id="email" type="email" class="input" placeholder="@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" class="input" required>
+            <option value=""> Choose Option </option>
+            <option value="1"> Male </option>
+            <option value="2"> Female </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" minlength="8" class="input" placeholder="Enter a Strong Password" required />
+        </div>
+
+        <fieldset>
+          <legend class="payment">Payment Option</legend>
+          <div class="form-group payment">
+            <label><input id="online" type="radio" name="paymentOP" value="online" checked>Online payment</label>
+            <label><input id="offline" type="radio" name="paymentOP" value="offline">Offline</label>
+          </div>
+        </fieldset>
+        <div class="form-group">
+
+          <input id="conditions" type="checkbox" name="conditions" required/>
+          <label for="conditions">Terms and condition*</label>
+        </div>
+
+        <input type="submit" value="Register" class="regBtn">
+
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

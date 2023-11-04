@@ -1,0 +1,89 @@
+<!-- create a HTML document to jump to another part of a document (on the same page) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment By Tahir Uddin Ahmed</title>
+    <style>
+        .firstArticle {
+            font-size: 24px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            background: rgb(67, 7, 207);
+            padding: 4px 6px;
+            font-size: 20px;
+            box-shadow: 2px 2px 2px #a9a8a8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jump to another part of the document.</h1>
+    <h2 id="top">Top section</h2>
+    <a class="btn" href="#middle">Go to Middle</a>
+    <div class="article">
+        <p>Using HTML, a text file is further marked up with additional text describing how the document should be
+            displayed. To keep the markup separate from the actual content of the HTML file, there is a special,
+            distinguishing HTML syntax that is used. These special components are known as HTML tags. The tags can
+            contain name-value pairs known as attributes, and a piece of content that is enclosed within a tag is
+            referred to as an HTML element.
+
+            HTML elements always have opening tags, content in the middle and closing tags. Attributes can provide
+            additional information about the element and are included in the opening tag. Elements can be described in
+            one of two ways:</p>
+        <ol>
+            <li>Block-level elements start on a new line in the document and take up their own space. Examples of these
+                elements include headings and paragraph tags.</li>
+            <li>Inline elements do not start on a new line in the document and only take up necessary space. These
+                elements usually format the contents of block-level elements. Examples of inline elements include
+                hyperlinks and text format tags.</li>
+        </ol>
+        <h3>Pros and cons of HTML</h3>
+        <p>Pros of using HTML include:</p>
+        <ol>
+            <li>Is widely adopted with a large amount of resources available.</li>
+            <li>Is natively run on every browser.</li>
+            <li>Is relatively easy to learn.</li>
+        </ol>
+    </div>
+
+    <h2 id="middle">Middle Section</h2>
+    <a class="btn" href="#bottom">Go to bottom</a>
+    <div class="article">
+        <h3>How to use and implement HTML</h3>
+        <p>Because HTML is completely text-based, an HTML file can be edited simply by opening it up in a program such
+            as Notepad++, Vi or Emacs. Any text editor can be used to create or edit an HTML file and, so long as it is
+            named with an .html file extension, any web browser -- such as Chrome or Firefox -- will be capable of
+            displaying the file as a webpage.
+
+            For professional software developers, there are a variety of WYSIWYG editors to develop webpages. NetBeans,
+            IntelliJ, Eclipse and Microsoft's Visual Studio provide WYSIWYG editors as either plugins or as standard
+            components, making it incredibly easy to use and implement HTML.</p>
+        <br><br>
+        <p>These WYSIWYG editors also provide HTML troubleshooting facilities, although modern web browsers often
+            contain web developer plugins that will highlight problems with HTML pages, such as a missing closing tag or
+            syntax that does not create well-formed HTML.</p>
+    </div>
+
+    <h2 id="bottom">Middle Section</h2>
+    <a class="btn" href="#top">Go to top</a>
+    <div class="article">
+        <h3>HTML, CSS and JavaScript</h3>
+        <p>HTML is used to create webpages but does experience limitations when it comes to fully responsive components.
+            Therefore, HTML should only be used to add text elements and structure them within a page. For more complex
+            features, HTML can be combined with cascading style sheets (CSS) and JavaScript (JS).</p>
+        <br><br>
+        <p>An HTML file can link to a cascading style sheet or JS file -- usually at the top of the document with a
+            specified file path -- which will contain information about which colors to use, which fonts to use and
+            other HTML element rendering information. JavaScript also allows developers to include more dynamic
+            functionality, such as pop-ups and photo sliders, in a webpage. Tags called class attributes are used to
+            match HTML elements to their corresponding CSS or JS elements.
+
+        </p>
+    </div>
+</body>
+
+</html>

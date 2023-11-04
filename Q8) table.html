@@ -1,0 +1,77 @@
+<!-- create a html document with all elements (table, caption, table row, table data element, table heading  element, Thead, tfoor, tbody-->
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Assignment by Tahir Ahmed </title>
+ <style>
+  body {
+   text-align: center;
+}
+  .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 50vh;
+  }
+   .table {
+    width: 60%;
+    border-collapse: collapse;
+ }
+  .table thead {
+    background-color:#04B4AE; 
+    padding: 10px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+ }
+  .table, th, td {
+   border: 1px solid #000;
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+  <h2>Student Marks (Morigaon College)</h2>
+ <table class="table">
+  <thead>
+    <tr>
+      <th>SNO</th>
+      <th>NAME</th>
+	    <th>AGE</th>
+     <th>MARK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Tahir Uddin Ahmed</td>
+      <td>19</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Minju Begum</td>
+	    <td>18</td>
+      <td>98</td>
+    </tr>
+
+	<tr>
+      <td>3</td>
+      <td>Ayan Ahmed</td>
+      <td>15</td>
+      <td>86</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+       <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>240</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</body>
+</html>
